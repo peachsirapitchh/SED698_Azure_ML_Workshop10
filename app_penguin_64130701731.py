@@ -7,10 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-
 from sklearn.metrics import confusion_matrix, classification_report
-
-
 # Load model
 with open('model_penguin_64130701731.pkl', 'rb') as file:
     model, species_encoder, island_encoder, sex_encoder = pickle.load(file)
